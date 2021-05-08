@@ -11,13 +11,13 @@ export default class RearCamera extends FrontCamera{
         let text = document.querySelector('.rearText');
         let launch = document.querySelector('.rearLaunch');
         img.src = data.img_src;
-        title.textContent = `Earth Date: ${data.earth_date}`
-        text.textContent = `Camera: ${data.camera.full_name}`
-        launch.textContent = `Launch Date: ${data.rover.launch_date}`
+        title.textContent = `Earth Date: ${data.earth_date}`;
+        text.textContent = `Camera: ${data.camera.full_name}`;
+        launch.textContent = `Launch Date: ${data.rover.launch_date}`;
     }
 }
 
-let rear = new RearCamera()
+let rear = new RearCamera();
 
 
 

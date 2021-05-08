@@ -3,7 +3,7 @@ import FrontCamera from "./FrontCamera.js";
 
 export default class ApodApi extends FrontCamera {
     constructor() {
-        super();
+        super()
     }
 
     //This function take a data from callback in RequestsToAPI file and process it

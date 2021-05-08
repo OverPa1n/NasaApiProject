@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="module" src="index.js" defer></script>
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="./public/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./style.css">
 
     <title>Nasa API</title>
@@ -36,7 +34,7 @@
     </div>
 </nav>
 
-<!--Explanation-->
+<!--Start Describe Block-->
 <div class="describe_block animate__animated">
     <div class="container d-flex justify-content-around" style="padding-top: 100px">
         <div class="card mr-3" style="width: 18rem;">
@@ -54,8 +52,9 @@
                     The full documentation for this API can be found in the <a href="https://github.com/nasa/apod-api">APOD
                     API Github repository</a>.
                 </p>
-                <button class="btn btn-info w-100" id="apodAPI">Try API</button>
+
             </div>
+            <button class="btn btn-info w-60" id="apodAPI">Try API</button>
         </div>
 
         <div class="card" style="width: 18rem;">
@@ -75,15 +74,17 @@
                     for example, will have a sol attribute of 1000.
                     If instead you prefer to search by the Earth date on which a photo was taken, you can do that too.
                 </p>
-                <button class="btn btn-info w-100" id="marsRoverAPI">Try API</button>
+
             </div>
+            <button class="btn btn-info w-60" id="marsRoverAPI">Try API</button>
         </div>
 
     </div>
 </div>
-
+<!--END Describe Block-->
 
 <!------------------------------------------------------------------------------------------------------------------------>
+
 <!--start Mars Photo API content-->
 <div class="marsBlock animate__animated animate__backInRight">
     <div class="container d-flex justify-content-center" style="padding-top: 100px">
@@ -124,7 +125,7 @@
         </div>
     </div>
 </div>
-
+<!--end Apod API content-->
 
 </body>
 </html>
