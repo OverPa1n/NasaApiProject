@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Nasa API</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light position-fixed bg-light w-100" style="z-index: 1;">
+    <a class="navbar-brand" href="https://api.nasa.gov/" target="_blank">NASA API</a>
+    <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nasa/apod-api" target="_blank">APOD <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/chrisccerami/mars-photo-api" target="_blank">Mars Rover
+                    Photos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Explanation-->
+<div class="describe_block animate__animated">
+    <div class="container d-flex justify-content-around" style="padding-top: 100px">
+        <div class="card mr-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">APOD</h5>
+                <p class="card-text">
+                    APOD API - One of the most popular websites at NASA is the <a
+                        href="http://apod.nasa.gov/apod/astropix.html"> Astronomy Picture of the Day</a>.
+                    In fact, this website is one of <a href="https://analytics.usa.gov/">the most popular websites</a>
+                    across all federal agencies. It has the popular appeal of a Justin Bieber video. This endpoint
+                    structures the APOD imagery and associated metadata so that it can be repurposed for other
+                    applications. In addition, if the concept_tags parameter is set to True, then keywords derived from
+                    the image explanation are returned. These keywords could be used as auto-generated hashtags for
+                    twitter or instagram feeds; but generally help with discoverability of relevant imagery.
+                    The full documentation for this API can be found in the <a href="https://github.com/nasa/apod-api">APOD
+                    API Github repository</a>.
+                </p>
+                <button class="btn btn-info w-100" id="apodAPI">Try API</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Mars Rover Photos</h5>
+                <p class="card-text">
+                    This API is designed to collect image data gathered by NASA's Curiosity, Opportunity, and Spirit
+                    rovers on
+                    Mars and make it more easily available to other developers, educators, and citizen scientists.
+                    This API is maintained by <a href="https://github.com/chrisccerami/mars-photo-api">Chris Cerami.</a>
+                    Each rover has its own set of photos stored in the database,
+                    which can be queried separately. There are several possible queries that can be made against the
+                    API.
+                    Photos are organized by the sol (Martian rotation or day) on which they were taken,
+                    counting up from the rover's landing date. A photo taken on Curiosity's 1000th Martian sol exploring
+                    Mars,
+                    for example, will have a sol attribute of 1000.
+                    If instead you prefer to search by the Earth date on which a photo was taken, you can do that too.
+                </p>
+                <button class="btn btn-info w-100" id="marsRoverAPI">Try API</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<!--start Mars Photo API content-->
+<div class="marsBlock animate__animated animate__backInRight">
+    <div class="container d-flex justify-content-center" style="padding-top: 100px">
+        <div class="card mr-3" style="width: 35rem; padding: 20px;">
+            <img src="" id="" class="card-img-top card_img frontImg" alt="Pic">
+            <div class="card-body">
+                <h5 class="card-title text-center frontText"></h5>
+                <p class="card-text pt-3 frontTitle" style="font-size: 1.6rem"></p>
+                <p class="card-text pt-3 frontLaunch" style="font-size: 1.6rem"></p>
+            </div>
+        </div>
+
+        <div class="card mr-3" style="width: 35rem; padding: 20px;">
+            <img src="" class="card-img-top card_img rearImg" alt="Pic">
+            <div class="card-body">
+                <h5 class="card-title text-center rearText"></h5>
+                <p class="card-text pt-3 rearTitle" style="font-size: 1.6rem"></p>
+                <p class="card-text pt-3 rearLaunch" style="font-size: 1.6rem"></p>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary marsHideBtn d-block">Hide API</button>
+
+</div>
+<!--end Mars Photo API content-->
+
+
+<!--start Apod API content-->
+<div class="apodBlock animate__animated animate__backInLeft">
+    <div class="container d-flex justify-content-center" style="padding-top: 100px">
+        <div class="card" style="width: 50rem;">
+            <img src="" class="card-img-top card_img apodImg" alt="Pic">
+            <div class="card-body">
+                <h5 class="card-title text-center apodTitle"></h5>
+                <p class="card-text pt-3 apodText" style="font-size: 1.6rem"></p>
+            </div>
+            <button class="btn btn-primary apodHideBtn">Hide API</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

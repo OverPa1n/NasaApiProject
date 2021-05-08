@@ -1,0 +1,16 @@
+.hideItems {
+    display: none;
+}
+.showApiItems {
+    display: block;
+}
+.marsBlock {
+    display: none;
+}
+.apodBlock {
+    display: none;
+}
+button {
+    width: 200px;
+    margin: 25px auto;
+}
