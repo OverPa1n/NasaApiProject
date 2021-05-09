@@ -6,6 +6,12 @@
 
 ----
 
+### I decided to use a some libraries:
+>* Bootstrap 4
+>* Animate CSS
+> 
+----
+
 ## How to start a project:
 All main files is into **Public** directory
 Firstly you cannot use a script file as a module without using a server.
@@ -55,11 +61,6 @@ Just open this project using one of these methods and follow the prompts on **bu
 
 ----
 
-### Also, I decided to use a some libraries:
->* Bootstrap 4
->* Animate CSS
-> 
-----
 **P.S** Closure i have described in **RequestsToAPI.js** file
 
 I will be so pleased if someone send me either a feedback about code or my idea to:
