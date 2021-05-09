@@ -7,7 +7,7 @@
 ----
 
 ## How to start a project:
-All main files is in **Public** directory
+All main files is into **Public** directory
 Firstly you cannot use a script file as a module without using a server.
 
 **In short cannot use type="module" with file protocol**
@@ -43,7 +43,7 @@ You will see:
 Pick one of these host, and you will see a project in action
 
 
-If you decided to use **Live Server** you need open **index.html** file in it that located in **Public** directory
+> If you decided to use **Live Server** you need open **index.html** file in it that located in **Public** directory
 
 ----
 
