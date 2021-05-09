@@ -7,6 +7,7 @@
 ----
 
 ## How to start a project:
+All main files is in **Public** directory
 Firstly you cannot use a script file as a module without using a server.
 
 **In short cannot use type="module" with file protocol**
@@ -21,7 +22,7 @@ Firstly you cannot use a script file as a module without using a server.
 
 ----
 
-For me best option is use IDE **Live Server** or install **http-server from npm:**
+For me best option is use IDE **Live Server** or install **http-server** from npm:
 
 
 
@@ -40,6 +41,9 @@ You will see:
 >http://127.0.0.1:8080
 
 Pick one of these host, and you will see a project in action
+
+
+If you decided to use **Live Server** you need open **index.html** file in it that located in **Public** directory
 
 ----
 
