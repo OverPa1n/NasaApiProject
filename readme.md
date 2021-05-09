@@ -6,18 +6,18 @@
 
 ----
 
-### I decided to use a some libraries:
+## I decided to use a some libraries:
 >* Bootstrap 4
 >* Animate CSS
 > 
 ----
 
-## How to start a project:
+### How to start a project:
 All main files is into **Public** directory
 Firstly you cannot use a script file as a module without using a server.
 
 **In short cannot use type="module" with file protocol**
-### Here are some of the options:
+#### Here are some of the options:
 
 * Use Live Server (Extension for VS Code)
 * Use http-server module from node (install via npm then run http-server . from your project directory)
