@@ -59,12 +59,5 @@ export default class ButtonsFunctional {
 
 }
 
-let mars = new ButtonsFunctional();
-let apod = new ButtonsFunctional();
 
-apod.showApodContent();
-apod.hideApodContent();
-
-mars.showMarsContent();
-mars.hideMarsContent();
 

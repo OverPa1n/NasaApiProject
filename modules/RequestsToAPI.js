@@ -2,9 +2,8 @@ import errorHandler from "../helpers/errorHandler.js";
 export default class RoverPhotoAPI {
 
     //Тут ми можем бачити closure. Функція requestToFrontCam приймає адрес як параметер
-    //Дальше функція fetch приймає цей параметер також так як вона знаходиться в зовншійній області видимості
+    //Функції fetch доступний цей параметер так як вона знаходиться в зовншійній області видимості
     //функції requestToFrontCam
-    //А потім ми вже обробляєм цей response який проходить через обробник помилок
 
     // Global environment
     requestToFrontCam(url) {

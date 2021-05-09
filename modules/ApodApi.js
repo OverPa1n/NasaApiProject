@@ -1,7 +1,6 @@
+import ButtonsFunctional from "./Buttonsfunctional.js";
 
-import FrontCamera from "./FrontCamera.js";
-
-export default class ApodApi extends FrontCamera {
+export default class ApodApi extends ButtonsFunctional {
     constructor() {
         super()
     }
@@ -20,5 +19,6 @@ export default class ApodApi extends FrontCamera {
 
 
 const apod = new ApodApi();
-
+apod.showApodContent();
+apod.hideApodContent();
 

@@ -1,8 +1,5 @@
-import FrontCamera from "./FrontCamera.js";
-export default class RearCamera extends FrontCamera{
-    constructor() {
-        super()
-    }
+
+export default class RearCamera {
 
     //This function take a data from callback in RequestsToAPI file and process it
     async rearCameraUI(data) {
@@ -17,7 +14,6 @@ export default class RearCamera extends FrontCamera{
     }
 }
 
-let rear = new RearCamera();
 
 
 

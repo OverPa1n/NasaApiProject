@@ -1,4 +1,8 @@
-export default class FrontCamera {
+import ButtonsFunctional from "./Buttonsfunctional.js";
+export default class FrontCamera extends ButtonsFunctional{
+    constructor() {
+        super();
+    }
 
     //This function take a data from callback in RequestsToAPI file and process it
     async frontCameraUI(data) {
@@ -12,11 +16,11 @@ export default class FrontCamera {
         launch.textContent = `Launch Date: ${data.rover.launch_date}`;
     }
 
-
 }
 
 let frontCamera = new FrontCamera();
-
+frontCamera.showMarsContent();
+frontCamera.hideMarsContent();
 
 
 
