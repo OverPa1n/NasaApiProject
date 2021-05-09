@@ -47,9 +47,11 @@ Pick one of these host, and you will see a project in action
 
 If you decided to use **Live Server** you need open **index.html** file in it that located in **Public** directory
 
-----
 
-Just open it on your browser and follow the prompts on **buttons**
+
+Just open this project using one of these methods and follow the prompts on **buttons**.
+
+**Good Luck**
 
 ----
 
