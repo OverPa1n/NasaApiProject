@@ -7,10 +7,42 @@
 ----
 
 ## How to start a project:
-In project, you are find a lot of files, but all you need it is:
+Firstly you cannot use a script file as a module without using a server.
 
-> Index.html
+**In short cannot use type="module" with file protocol**
+### Here are some of the options:
+
+>* Use Live Server (Extension for VS Code)
+>* Use http-server module from node (install via npm then run http-server . from your project directory)
+>* use http.server package from python
+>* use a wamp (or lamp) server
 > 
+
+
+----
+
+For me best option is use IDE **Live Server** or install **http-server from npm:**
+
+
+
+> * npm install --global http-server
+> * brew install http-server
+> 
+> [for more information visit: http-server npm](https://www.npmjs.com/package/http-server)
+
+Then open your terminal and type: **http-server**
+
+You will see: 
+>Available on:
+> 
+>http://192.168.1.79:8080
+> 
+>http://127.0.0.1:8080
+
+Pick one of these host, and you will see a project in action
+
+----
+
 Just open it on your browser and follow the prompts on **buttons**
 
 ----
