@@ -42,6 +42,8 @@ You will see:
 
 Pick one of these host, and you will see a project in action
 
+----
+
 
 If you decided to use **Live Server** you need open **index.html** file in it that located in **Public** directory
 
