@@ -6,7 +6,7 @@
 
 ----
 
-## I decided to use a some libraries:
+**I decided to use a some libraries:**
 >* Bootstrap 4
 >* Animate CSS
 > 
