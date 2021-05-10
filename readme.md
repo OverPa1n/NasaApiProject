@@ -2,7 +2,7 @@
 
 ----
 
-> This project can show you an **Astronomy pictures of the day** and **image from the camera of Curiosity, Opportunity, Spirit rovers** that launched by the United States as part of the Mars Exploration Rover project and currently is on Mars!
+This project can show you an **Astronomy pictures of the day** and **image from the camera of Curiosity, Opportunity, Spirit rovers** that launched by the United States as part of the Mars Exploration Rover project and currently is on Mars!
 
 ----
 
@@ -14,9 +14,11 @@
 
 ## How to start a project:
 All main files is into **Public** directory
+
 Firstly you cannot use a script file as a module without using a server.
 
-**In short cannot use type="module" with file protocol**
+**In short you cannot use type="module" with file protocol**
+
 ### Here are some of the options:
 
 * Use Live Server (Extension for VS Code)
